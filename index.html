@@ -1,0 +1,1897 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>على بن عايد بن علي حسيني الشمري</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        :root {
+            --primary-color: #60a5fa;
+            --secondary-color: #93c5fd;
+            --accent-color: #38bdf8;
+            --dark-color: #111827;
+            --light-color: #1f2937;
+            --text-color: #e5e7eb;
+            --card-bg: #374151;
+            --nav-bg: rgba(17, 24, 39, 0.95);
+            --border-color: #4b5563;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--dark-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: var(--nav-bg);
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            right: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary-color);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-links i {
+            font-size: 1.1rem;
+            color: var(--accent-color);
+        }
+
+        .nav-links a:hover i {
+            transform: translateY(-2px);
+            transition: transform 0.3s ease;
+        }
+
+        /* Favicon styles */
+        .favicon {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            margin-left: 8px;
+        }
+
+        /* Header Section */
+        header {
+            background: linear-gradient(135deg, #38bdf8, #818cf8);
+            color: white;
+            padding: 120px 0 60px;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 5px solid white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.05);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        header p {
+            font-size: 1.4rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 30px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .cta-btn {
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .primary-btn {
+            background-color: var(--accent-color);
+            color: var(--dark-color);
+        }
+
+        .secondary-btn {
+            border: 2px solid white;
+            color: white;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .primary-btn:hover {
+            background-color: var(--secondary-color);
+        }
+
+        .secondary-btn:hover {
+            background-color: var(--accent-color);
+            border-color: var(--accent-color);
+        }
+
+        /* About Section */
+        .section {
+            padding: 100px 0;
+            background-color: var(--dark-color);
+        }
+
+        .section:nth-child(even) {
+            background-color: var(--light-color);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            color: var(--text-color);
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 3px;
+            background-color: var(--accent-color);
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .about-text {
+            font-size: 1.1rem;
+            color: var(--text-color);
+            line-height: 1.8;
+        }
+
+        .info-list {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0 0;
+        }
+
+        .info-list li {
+            margin-bottom: 10px;
+            color: var(--text-color);
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .info-list li i {
+            color: var(--accent-color);
+        }
+
+        .about-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .stat-item {
+            background-color: var(--card-bg);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+            color: var(--text-color);
+        }
+
+        .stat-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin-bottom: 5px;
+        }
+
+        /* Skills Section */
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .skill-category {
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border-color);
+        }
+
+        .skill-category h3 {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 25px;
+            color: var(--accent-color);
+        }
+
+        .skill-category h3 i {
+            font-size: 1.4rem;
+        }
+
+        .skill-item {
+            margin-bottom: 15px;
+        }
+
+        .skill-item p {
+            margin: 0;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .skill-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+
+        .skill-bar {
+            height: 8px;
+            background-color: var(--border-color);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .skill-progress {
+            height: 100%;
+            background: linear-gradient(90deg, var(--accent-color), var(--secondary-color));
+            border-radius: 4px;
+            transition: width 1s ease;
+        }
+
+        /* Projects Section */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .project-card {
+            background-color: var(--card-bg);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            border: 1px solid var(--border-color);
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .project-content {
+            padding: 20px;
+        }
+
+        .project-title {
+            font-size: 1.4rem;
+            color: var(--text-color);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .project-title i {
+            color: var(--accent-color);
+        }
+
+        .project-description {
+            color: var(--text-color);
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .project-tag {
+            background-color: var(--accent-color);
+            color: var(--dark-color);
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            transition: all 0.3s ease;
+        }
+
+        .project-tag:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-2px);
+        }
+
+        .project-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .project-link {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            padding: 8px 0;
+        }
+
+        .project-link:hover {
+            color: var(--secondary-color);
+            transform: translateX(-5px);
+        }
+
+        .project-link i {
+            font-size: 1.1rem;
+        }
+
+        /* Contact Section */
+        .contact-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .contact-info {
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border-color);
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .contact-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--accent-color), var(--secondary-color));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        .contact-text h4 {
+            color: var(--text-color);
+            margin-bottom: 5px;
+        }
+
+        .contact-text p {
+            color: var(--text-color);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--light-color);
+            color: white;
+            padding: 50px 0 20px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: var(--text-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            background-color: var(--card-bg);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-color);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background-color: var(--accent-color);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav {
+                padding: 0.5rem 0;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            header {
+                padding: 100px 0 60px;
+            }
+
+            .profile-img {
+                width: 150px;
+                height: 150px;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+                padding: 10px;
+            }
+
+            .project-image-container {
+                height: 180px;
+            }
+
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Certifications Section */
+        .certifications-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .certification-card {
+            background-color: var(--card-bg);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            border: 1px solid var(--border-color);
+        }
+
+        .certification-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .cert-image {
+            height: 200px;
+            overflow: hidden;
+            background: linear-gradient(135deg, var(--accent-color), var(--secondary-color));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .cert-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .certification-card:hover .cert-img {
+            transform: scale(1.05);
+        }
+
+        .cert-content {
+            padding: 20px;
+        }
+
+        .cert-content h3 {
+            font-size: 1.3rem;
+            color: var(--text-color);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .cert-content h3::before {
+            content: '🏆';
+            font-size: 1.2rem;
+        }
+
+        .cert-issuer {
+            color: var(--accent-color);
+            font-weight: 600;
+            margin-bottom: 5px;
+            font-size: 0.9rem;
+        }
+
+        .cert-date {
+            color: var(--text-color);
+            font-size: 0.85rem;
+            margin-bottom: 15px;
+            opacity: 0.8;
+        }
+
+        .cert-description {
+            color: var(--text-color);
+            line-height: 1.6;
+            font-size: 0.9rem;
+        }
+
+        /* Gallery Section */
+        .gallery-filters {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 10px 25px;
+            background-color: var(--card-bg);
+            color: var(--text-color);
+            border: 2px solid var(--border-color);
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        .filter-btn:hover {
+            background-color: var(--accent-color);
+            color: var(--dark-color);
+            border-color: var(--accent-color);
+            transform: translateY(-2px);
+        }
+
+        .filter-btn.active {
+            background-color: var(--accent-color);
+            color: var(--dark-color);
+            border-color: var(--accent-color);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+            padding: 20px 0;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            background-color: var(--card-bg);
+        }
+
+        .gallery-item.hide {
+            display: none;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+            padding: 20px;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            transform: translateY(0);
+        }
+
+        .gallery-category {
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 600;
+            display: inline-block;
+            background-color: var(--accent-color);
+            padding: 5px 15px;
+            border-radius: 20px;
+        }
+
+        /* Gallery Link Items */
+        .gallery-item.link-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            min-height: 300px;
+            text-decoration: none;
+            background: linear-gradient(135deg, var(--card-bg), var(--light-color));
+            border: 2px solid var(--border-color);
+        }
+
+        .gallery-item.link-item:hover {
+            border-color: var(--accent-color);
+        }
+
+        .gallery-item.link-item .link-icon {
+            font-size: 3rem;
+            color: var(--accent-color);
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item.link-item:hover .link-icon {
+            transform: scale(1.2);
+        }
+
+        .gallery-item.link-item .link-title {
+            color: var(--text-color);
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+
+        .gallery-item.link-item .link-url {
+            color: var(--accent-color);
+            font-size: 0.85rem;
+            text-align: center;
+            word-break: break-all;
+            opacity: 0.8;
+        }
+
+        /* Lightbox Modal */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.95);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox-content {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: zoomIn 0.3s ease;
+        }
+
+        .lightbox-content img {
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            border-radius: 0;
+            box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5);
+        }
+
+        .lightbox-close {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: var(--accent-color);
+            color: var(--dark-color);
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            z-index: 10000;
+        }
+
+        .lightbox-close:hover {
+            background-color: var(--secondary-color);
+            transform: rotate(90deg);
+        }
+
+        .lightbox-nav {
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: var(--accent-color);
+            color: var(--dark-color);
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            z-index: 10000;
+        }
+
+        .lightbox-nav:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-50%) scale(1.1);
+        }
+
+        .lightbox-prev {
+            left: 20px;
+        }
+
+        .lightbox-next {
+            right: 20px;
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate {
+            animation: fadeIn 1s ease forwards;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="container nav-container">
+            <a href="#" class="logo">
+
+                AS
+            </a>
+            <ul class="nav-links">
+                <li>
+                    <a href="#about">
+                        <i class="fas fa-user"></i>
+                        عني
+                    </a>
+                </li>
+                <li>
+                    <a href="#skills">
+                        <i class="fas fa-code"></i>
+                        المهارات
+                    </a>
+                </li>
+                <li>
+                    <a href="#gallery">
+                        <i class="fas fa-images"></i>
+                        معرض الأعمال
+                    </a>
+                </li>
+                <li>
+                    <a href="#services">
+                        <i class="fas fa-project-diagram"></i>
+                        الخدمات
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact">
+                        <i class="fas fa-envelope"></i>
+                        تواصل معي
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container">
+            <img src="./cover.jpeg" alt="على بن عايد بن علي حسيني الشمري" class="profile-img">
+            <h1>على بن عايد بن علي حسيني الشمري</h1>
+            <p>كاتب محتوى متخصص في استراتيجيات تحسين محركات البحث والسرد الإبداعي.</p>
+            <div class="cta-buttons">
+                <a href="#services" class="cta-btn primary-btn">استكشف خدماتي</a>
+                <a href="#contact" class="cta-btn secondary-btn">تواصل معي</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>عني</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        أقدم لكم مهارات متنوعة وممتازة في:
+                    </p>
+                    <ul class="info-list">
+                        <li><i class="fas fa-check-circle"></i> كتابة محتوى المدونات والمواقع متوافقة مع محركات البحث
+                            لزيادة الظهور.</li>
+                        <li><i class="fas fa-check-circle"></i> وصف تسويقي للمنتجات لجذب القراء لزيادة معدلات البيع
+                            والشراء.</li>
+                        <li><i class="fas fa-check-circle"></i> محتوى تسويقي وعمل بوستات لتعريف القراء والزائرين
+                            بالعلامة التجارية أو المنتج الذي تقدمة.</li>
+                        <li><i class="fas fa-check-circle"></i> عمل اعلانات وكتابة بوستات إعلانية وتسويقية قصيرة على
+                            السوشيال ميديا.</li>
+                        <li><i class="fas fa-check-circle"></i> كتابة محتوى مؤثر لمنصات التبرعات لحث الجمهور على التبرع
+                            ودعم القضايا الإنسانية بأسلوب بسيط وجميل يلمس المشاعر.</li>
+                    </ul>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">عربي</div>
+                        <p>اللغة الأم</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">إنجليزي</div>
+                        <p>إتقان جيد جداً</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>المهارات</h2>
+            </div>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3><i class="fas fa-search"></i> البحث والتحليل</h3>
+                    <div class="skill-item">
+                        <p>مهارات البحث وجمع المعلومات التي تدعم القرارات التحريرية واستراتيجية المحتوى.</p>
+                    </div>
+                    <div class="skill-item">
+                        <p>التفكير التحليلي وحل المشكلات لربط أهداف العميل بنصوص عملية وواضحة.</p>
+                    </div>
+                    <div class="skill-item">
+                        <p>متابعة اتجاهات تحسين محركات البحث لضمان بقاء المحتوى متوافقاً مع متطلبات محركات البحث.</p>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-comments"></i> التواصل والإبداع</h3>
+                    <div class="skill-item">
+                        <p>مهارات التواصل والإقناع التي تشكل الرسائل حول احتياجات الجمهور وتثير التفاعل.</p>
+                    </div>
+                    <div class="skill-item">
+                        <p>تحرير اللغة بالإضافة إلى مراجعة الإملاء والنحو لضمان أسلوب سهل القراءة ومصقول.</p>
+                    </div>
+                    <div class="skill-item">
+                        <p>الابتكار الإبداعي للمحتوى الإعلامي إلى جانب المحتوى التعليمي والتسويقي.</p>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-tasks"></i> العمليات والكفاءة</h3>
+                    <div class="skill-item">
+                        <p>القدرة على إدارة الوقت والمشاريع بكفاءة مع احترام المواعيد النهائية.</p>
+                    </div>
+                    <div class="skill-item">
+                        <p>تنسيق سير العمل بين فرق التسويق والتعليم للحفاظ على توافق الرسائل.</p>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-language"></i> الترجمة</h3>
+                    <div class="skill-item">
+                        <p>ترجمة المقالات من الانجليزية الى العربية والعكس.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>معرض الأعمال</h2>
+                <p class="about-text">مجموعة من نماذج أعمالي في كتابة المحتوى</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">الكل</button>
+                <button class="filter-btn" data-filter="Blog">المدونات</button>
+                <button class="filter-btn" data-filter="products">المنتجات</button>
+                <button class="filter-btn" data-filter="topworks">أعمالي المميزة</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid">
+                <!-- Blog Images -->
+                <div class="gallery-item" data-category="Blog">
+                    <img src="./images/Blog/WasdasdasdhatsApp Image 2025-12-10 at 11.52.20 AM.jpeg" alt="مدونة">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">المدونات</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Blog">
+                    <img src="./images/Blog/WasdasdashatsApp Image 2025-12-10 at 11.52.20 AM.jpeg" alt="مدونة">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">المدونات</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Blog">
+                    <img src="./images/Blog/WhasdatsApp Image 2025-12-10 at 11.51.20 AM.jpeg" alt="مدونة">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">المدونات</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Blog">
+                    <img src="./images/Blog/WhatasdsApp Image 2025-12-10 at 11.51.21 AM.jpeg" alt="مدونة">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">المدونات</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Blog">
+                    <img src="./images/Blog/WhatsApp asdas 2025-12-10 at 11.51.19 AM.jpeg" alt="مدونة">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">المدونات</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Blog">
+                    <img src="./images/Blog/WhatsApp asdasdasdas 2025-12-10 at 11.51.21 AM.jpeg" alt="مدونة">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">المدونات</span>
+                    </div>
+                </div>
+
+                <!-- Products Images -->
+                <div class="gallery-item" data-category="products">
+                    <img src="./images/products/WhatsApp Image 2025-12-10 at 11.51.19 AM.jpeg" alt="منتجات">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">المنتجات</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="products">
+                    <img src="./images/products/WhatsApp Image 2025-12-10 at 11.52.21 asdasdAM.jpeg" alt="منتجات">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">المنتجات</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="products">
+                    <img src="./images/products/WhatsApp Image 2025-12-10 at 11.5asdasdasd2.21 AM.jpeg" alt="منتجات">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">المنتجات</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="products">
+                    <img src="./images/products/WhatsApp Image 2025-12-10 at 11asdasd.52.21 AM.jpeg" alt="منتجات">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">المنتجات</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="products">
+                    <img src="./images/products/WhatsApp Image 2025-12-10 at 1asd1.51.20 AM.jpeg" alt="منتجات">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">المنتجات</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="products">
+                    <img src="./images/products/WhatsApp Image 2025-12-10asdasd at 11.52.20 AM.jpeg" alt="منتجات">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">المنتجات</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="products">
+                    <img src="./images/products/WhatsApp Image 2025-1asd2-10 at 11.51.20 AM.jpeg" alt="منتجات">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">المنتجات</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="products">
+                    <img src="./images/products/WhatsApp Image 20asdasd25-12-10 at 11.52.21 AM.jpeg" alt="منتجات">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">المنتجات</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="products">
+                    <img src="./images/products/WhatsApp Imasdage 2025-12-10 at 11.51.20 AM.jpeg" alt="منتجات">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">المنتجات</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="products">
+                    <img src="./images/products/WhatsApp Imasdage 2025-12-10 at 11.51.21 AM.jpeg" alt="منتجات">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">المنتجات</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="products">
+                    <img src="./images/products/WhatsasdasdApp Image 2025-12-10 at 11.51.21 AM.jpeg" alt="منتجات">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">المنتجات</span>
+                    </div>
+                </div>
+                <!-- Top Works Links -->
+                <a href="https://www.daralkhair.org.sa/news/%D9%83%D9%8A%D9%81%D9%8A%D8%A9-%D8%A7%D8%AE%D8%AA%D9%8A%D8%A7%D8%B1-%D8%AC%D9%85%D8%B9%D9%8A%D8%A7%D8%AA-%D8%AF%D8%B9%D9%85-%D8%A7%D9%84%D8%B7%D8%A7%D9%84%D8%A8-%D8%A7%D9%84%D8%AC%D8%A7%D9%85%D8%B9%D9%8A/"
+                    class="gallery-item link-item" data-category="topworks" target="_blank" rel="noopener">
+                    <i class="fas fa-graduation-cap link-icon"></i>
+                    <div class="link-title">كيفية اختيار جمعيات دعم الطالب الجامعي</div>
+
+                </a>
+
+                <a href="https://lg.syanahegypt.com/%D8%AA%D8%B1%D9%83%D9%8A%D8%A8%D8%A7%D8%AA-%D8%BA%D8%B3%D8%A7%D9%84%D8%A7%D8%AA-lg/"
+                    class="gallery-item link-item" data-category="topworks" target="_blank" rel="noopener">
+                    <i class="fas fa-tools link-icon"></i>
+                    <div class="link-title">تركيبات غسالات LG</div>
+
+                </a>
+
+                <a href="https://ghourzahs.com/ar/blog/%D8%A3%D9%81%D8%B6%D9%84-%D9%86%D9%88%D8%B9-%D9%82%D9%85%D8%A7%D8%B4-%D9%84%D9%84%D8%B9%D8%A8%D8%A7%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%B3%D9%88%D8%AF%D8%A7%D8%A1/a-2069614780"
+                    class="gallery-item link-item" data-category="topworks" target="_blank" rel="noopener">
+                    <i class="fas fa-tshirt link-icon"></i>
+                    <div class="link-title">أفضل نوع قماش للعبايات السوداء</div>
+
+                </a>
+
+                <a href="https://aywdllsharaltbyay.com/blogs/%D8%A7%D9%86%D9%88%D8%A7%D8%B9%20%D9%88%D8%A7%D8%B4%D9%83%D8%A7%D9%84%20%D8%A7%D9%84%D8%A8%D9%88%D8%A7%D8%B1%D9%8A%D9%83"
+                    class="gallery-item link-item" data-category="topworks" target="_blank" rel="noopener">
+                    <i class="fas fa-gem link-icon"></i>
+                    <div class="link-title">أنواع وأشكال البواريك</div>
+
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>الخدمات</h2>
+                <p class="about-text">أقدم حلول كتابة وتحرير شاملة تبني حضوراً رقمياً متماسكاً ومقنعاً.</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">
+                            <i class="fas fa-file-alt"></i>
+                            مقالات احترافية ومحتوى طويل
+                        </h3>
+                        <p class="project-description">
+                            مقالات ومنشورات مدونات وتقارير معرفية مدعومة بمراجع موثوقة، بأسلوب يعكس علامتك التجارية عبر
+                            أي صناعة.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">مقالات</span>
+                            <span class="project-tag">SEO</span>
+                            <span class="project-tag">B2B/B2C</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">
+                            <i class="fas fa-share-alt"></i>
+                            محتوى تفاعلي لوسائل التواصل الاجتماعي
+                        </h3>
+                        <p class="project-description">
+                            منشورات ونصوص قصيرة تثير المحادثة وتدعم الحملات المدفوعة أو العضوية مع احترام صوت علامتك
+                            التجارية.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">منشورات</span>
+                            <span class="project-tag">حملات</span>
+                            <span class="project-tag">تفاعل</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">
+                            <i class="fas fa-graduation-cap"></i>
+                            محتوى تعليمي وإرشادي
+                        </h3>
+                        <p class="project-description">
+                            دروس وكتيبات ونشرات تعليمية للأطفال والكبار باستخدام هياكل مبسطة تحافظ على فضول القراء.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">تعليم</span>
+                            <span class="project-tag">أدلة</span>
+                            <span class="project-tag">ورش عمل</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">
+                            <i class="fas fa-chart-line"></i>
+                            تحسين محتوى SEO
+                        </h3>
+                        <p class="project-description">
+                            مراجعة الهيكل والعناوين والكلمات المفتاحية بحيث تتوافق كل قطعة مع معايير SEO وتزيد من الظهور
+                            العضوي.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">بحث الكلمات المفتاحية</span>
+                            <span class="project-tag">ميتا</span>
+                            <span class="project-tag">تحسين مستمر</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">
+                            <i class="fas fa-check-circle"></i>
+                            مراجعة وتحرير المحتوى
+                        </h3>
+                        <p class="project-description">
+                            تحرير لغوي ونحوي شامل بالإضافة إلى تعديلات النبرة قبل النشر لضمان الجودة واتساق الأسلوب.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">تحرير</span>
+                            <span class="project-tag">جودة</span>
+                            <span class="project-tag">صوت العلامة التجارية</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>المشاريع – نماذج الأعمال</h2>
+                <p class="about-text">انقر على أي بطاقة لفتح تفاصيل المشروع الكاملة في مستندات Google.</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">
+                            <i class="fas fa-external-link-alt"></i>
+                            خدمة إدارة المتاجر الالكترونية
+                        </h3>
+                        <p class="project-description">
+                            نحقق لك في ويز كل ما تحتاج إليه من أجل إدارة متجرك الالكتروني، وهذا لأننا قادرين على تحويل
+                            كل أفكارك، وأحلامك الخاصة بمتجرك إلى واقع ملموس، يمكنك من تحقيق أهدافك وطموحاتك في الوصول
+                            إلى أكبر شريحة من العملاء.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://www.google.com/url?q=https://docs.google.com/document/d/1JUjRNuLr-9EVaraol4uQHzod3BrobsY-qqqDJIzJDos/edit?usp%3Ddrivesdk&sa=D&source=editors&ust=1764005438476078&usg=AOvVaw2Mna42Q2zMH0mJGn7vbH5M"
+                                class="project-link" target="_blank" rel="noopener">
+                                <i class="fas fa-eye"></i> عرض المشروع
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">
+                            <i class="fas fa-external-link-alt"></i>
+                            أفضل طرق حجز فندق بورتو مطروح وأهم التفاصيل
+                        </h3>
+                        <p class="project-description">
+                            موقع Vacation Time يمكنك من خلاله القيام بـ حجز فندق بورتو مطروح بسهولة وسرعة وطريقة مضمونة
+                            تفيد في الحصول على أفضل النتائج المرغوب فيها وتوفير كافة الخدمات والمميزات في صورة تقدم
+                            الرفاهية والراحة لمختلف الفئات من الزوار بما يتوافق مع الرغبات والمتطلبات واحتياجات الجميع.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://www.google.com/url?q=https://docs.google.com/document/d/1-ALy4DSNetml53DqMnUQEwCqd7abV3VIOa4MJWV8uRA/edit?usp%3Ddrivesdk&sa=D&source=editors&ust=1764005438476447&usg=AOvVaw2rrZwzViSTEHxmhNAZfG2R"
+                                class="project-link" target="_blank" rel="noopener">
+                                <i class="fas fa-eye"></i> عرض المشروع
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">
+                            <i class="fas fa-external-link-alt"></i>
+                            متابعين تيك توك
+                        </h3>
+                        <p class="project-description">
+                            يتيح متجر xb5 فرصة الحصول على خدمة تزويد متابعين تيك توك بأعلى مستوى من الجودة والاحترافية
+                            التي تضمن الوصول إلى أفضل النتائج المرغوب فيها بأقل جهد وأقل تكلفة.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://www.google.com/url?q=https://docs.google.com/document/d/1Otlnufo3nCiSZys6lCFYhOCC82KS4_7P/edit?usp%3Ddrivesdk%26ouid%3D111561375767793187873%26rtpof%3Dtrue%26sd%3Dtrue&sa=D&source=editors&ust=1764005438476685&usg=AOvVaw0d8ozSzTuIyAANF1bZUiOs"
+                                class="project-link" target="_blank" rel="noopener">
+                                <i class="fas fa-eye"></i> عرض المشروع
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">
+                            <i class="fas fa-external-link-alt"></i>
+                            ماهي اسعار اشتراك نتفلكس
+                        </h3>
+                        <p class="project-description">
+                            يتوفر لدى خدمات برو كل ما يهم عملائنا عن اشتراك نتفلكس والتي تعد المنصة الإلكترونية الأشهر
+                            على مستوى العالم وذلك لما تمتاز به من جودة من حيث المحتوى والدقة التي يتم تقديمه بها والتي
+                            تشمل الصوت والصورة.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://www.google.com/url?q=https://docs.google.com/document/d/1SrPVAgho9baTpynOIDE5jF4KakZAN8p4nu9gyiVyq08/edit?usp%3Ddrivesdk&sa=D&source=editors&ust=1764005438476970&usg=AOvVaw0a2AUmbkCURF44ngUz7gIR"
+                                class="project-link" target="_blank" rel="noopener">
+                                <i class="fas fa-eye"></i> عرض المشروع
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">
+                            <i class="fas fa-external-link-alt"></i>
+                            شنطة مناسبات جو بار
+                        </h3>
+                        <p class="project-description">
+                            شنطة جو بار ذات التصميم العصري الذي تجتمع به الأناقة والعملية هو ما نهتم بتقديمه أمام جميع
+                            محبين هذه الماركة العالمية بأقل سعر ومستوى جودة لا يقبل المنافسة.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://www.google.com/url?q=https://docs.google.com/document/d/1gW0tZP781lbo3H6CShYRldXrbxmjKKSLeOD6WB9LhhY/edit?usp%3Ddrivesdk&sa=D&source=editors&ust=1764005438477374&usg=AOvVaw2faFvpmt4vyDA3YHqQ8XTZ"
+                                class="project-link" target="_blank" rel="noopener">
+                                <i class="fas fa-eye"></i> عرض المشروع
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">
+                            <i class="fas fa-external-link-alt"></i>
+                            22 انش ويفي جذور كامله كثافه 180
+                        </h3>
+                        <p class="project-description">
+                            باروكة شعر ويفي طويل طبيعي هي أيقونة في عالم الموضة والجمال </p>
+                        <div class="project-links">
+                            <a href="https://www.google.com/url?q=https://docs.google.com/document/d/11pNLPM3XFIIKYu7nJqO2wKvs0UZoak6qkL4PEo2njcA/edit?usp%3Ddrivesdk&sa=D&source=editors&ust=1764005438477454&usg=AOvVaw3502X4r5r-1TucaN9ENo6b"
+                                class="project-link" target="_blank" rel="noopener">
+                                <i class="fas fa-eye"></i> عرض المشروع
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">
+                            <i class="fas fa-external-link-alt"></i>
+                            20 انش ويفي جذور كامله كثافه 180
+                        </h3>
+                        <p class="project-description">
+                            باروكة شعر ويفي اسود قصير، هي الباروكة المثالية لك إذا كنت تريدين إطلالة عصرية وعملية وأنيقة
+                            في نفس الوقت فهي اختيار مميز لكل امرأة تحب طلة مفعمه بالحيويه وسهله في التمشيط، </p>
+                        <div class="project-links">
+                            <a href="https://www.google.com/url?q=https://docs.google.com/document/d/1HfTmwXkvi4j-pS5UAewzSkhOvr01_Ee4B3FL4OgUfDs/edit?usp%3Ddrivesdk&sa=D&source=editors&ust=1764005438477527&usg=AOvVaw2LsjGOxwWtJ7c0v9cdt7Ub"
+                                class="project-link" target="_blank" rel="noopener">
+                                <i class="fas fa-eye"></i> عرض المشروع
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">
+                            <i class="fas fa-external-link-alt"></i>
+                            آفضل عبايات كتان صيفية في السعودية
+                        </h3>
+                        <p class="project-description">
+                            مع فصل الصيف يصبح الاهتمام بشراء عبايات كتان صيفية
+                            مهم وضروري من أجل الحصول على إطلالة مريحة وأنيقة في نفس الوقت
+                        </p>
+                        <div class="project-links">
+                            <a href="https://www.google.com/url?q=https://docs.google.com/document/d/1tlpIsngw6w1Zxx8ZVUd5WuUTQB-ohqjzHcVkBXUavTA/edit?usp%3Ddrivesdk&sa=D&source=editors&ust=1764005438477598&usg=AOvVaw1GH9FYVcKreAgWO7J0T33-"
+                                class="project-link" target="_blank" rel="noopener">
+                                <i class="fas fa-eye"></i> عرض المشروع
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">
+                            <i class="fas fa-external-link-alt"></i>
+                            معايير اختيار عبايات سواريه شيفون
+                        </h3>
+                        <p class="project-description">
+                            عبايات سواريه شيفون هي عبايات انيقة وانسيابية تتميز بأنها خفيفة وناعمة وتوفر مظهر أنيق ولائق
+                            ومثاليه للمناسبات والسهرات المهمة </p>
+                        <div class="project-links">
+                            <a href="https://www.google.com/url?q=https://docs.google.com/document/d/1wiBsZ4_O6xSyDdLbw1-oFOY5NVl--7yWCj7C_-jPvgc/edit?usp%3Ddrivesdk&sa=D&source=editors&ust=1764005438477824&usg=AOvVaw0I9nRCSN7y1B4e_3Wgxau_"
+                                class="project-link" target="_blank" rel="noopener">
+                                <i class="fas fa-eye"></i> عرض المشروع
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">
+                            <i class="fas fa-external-link-alt"></i>
+                            شنطة مناسبات جو بار
+                        </h3>
+                        <p class="project-description">
+                            شنطة جو بار ذات التصميم العصري الذي تجتمع به الأناقة والعملية هو ما نهتم بتقديمه أمام جميع
+                            محبين هذه الماركة العالمية بأقل سعر ومستوى جودة لا يقبل المنافسة.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://www.google.com/url?q=https://docs.google.com/document/d/1gW0tZP781lbo3H6CShYRldXrbxmjKKSLeOD6WB9LhhY/edit?usp%3Ddrivesdk&sa=D&source=editors&ust=1764005438477374&usg=AOvVaw2faFvpmt4vyDA3YHqQ8XTZ"
+                                class="project-link" target="_blank" rel="noopener">
+                                <i class="fas fa-eye"></i> عرض المشروع
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">
+                            <i class="fas fa-external-link-alt"></i>
+                            افضل ماركات الاحذية الرياضية
+                        </h3>
+                        <p class="project-description">
+                            عند البحث عن افضل ماركات الاحذية الرياضية، قد تشعر ببعض الحيرة، وذلك لأنه هناك الكثير من
+                            العلامات التجارية العالمية التي يمكنها أن توفر الراحة والمتانة أثناء الاستخدام فهناك ماركات
+                            كثيرة تكون مناسبة للرياضيين </p>
+                        <div class="project-links">
+                            <a href="https://www.google.com/url?q=https://docs.google.com/document/d/10PKU7HYRXgfRY5THXuHQ_Jm_lJd6-ox8d1btL8PAKt4/edit?usp%3Ddrivesdk&sa=D&source=editors&ust=1764005438478049&usg=AOvVaw3VXlsG_qhaw5kPwWIQbwpN"
+                                class="project-link" target="_blank" rel="noopener">
+                                <i class="fas fa-eye"></i> عرض المشروع
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">
+                            <i class="fas fa-external-link-alt"></i>
+                            أفضل اسعار كاميرات المراقبة الخارجية في السعودية
+                        </h3>
+                        <p class="project-description">
+                            تظهر اهمية كاميرات المراقبة في حماية المنازل والأعمال يوما بعد يوم ففي ايامنا هذه تزداد
+                            الرغبة في الأمن وأصبحت من الأولويات القصوى ولذلك يسعى الناس </p>
+                        <div class="project-links">
+                            <a href="https://www.google.com/url?q=https://docs.google.com/document/d/1tD9wGSwR_bdwwfU-ZAupQFhbUiwqeHHotdWwig4FHI0/edit?usp%3Ddrivesdk&sa=D&source=editors&ust=1764005438478229&usg=AOvVaw3ty6DGMu9sX_Z_cL5zkkv9"
+                                class="project-link" target="_blank" rel="noopener">
+                                <i class="fas fa-eye"></i> عرض المشروع
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">
+                            <i class="fas fa-external-link-alt"></i>
+                            تيشيرت ريال مدريد 25/26 كم طويل ابيض
+                        </h3>
+                        <p class="project-description">
+                            يبقى اللون الأبيض هو الهوية الأبرز لنادي ريال مدريد، فهو يرمز إلى الأناقة الملكية والتاريخ
+                            العريق للنادي الأكثر تتويجا في أوروبا، ومع إصدار تيشيرت ريال مدريد 25/26 كم طويل ابيض، </p>
+                        <div class="project-links">
+                            <a href="https://www.google.com/url?q=https://docs.google.com/document/d/1HYtAV0X8g9Q66iyKFlE-vnskI4jKVsHaFCXT6ZqbbkI/edit?usp%3Dsharing&sa=D&source=editors&ust=1764005438478401&usg=AOvVaw0cNZHqdkbqlcMhkjAxoFWN"
+                                class="project-link" target="_blank" rel="noopener">
+                                <i class="fas fa-eye"></i> عرض المشروع
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">
+                            <i class="fas fa-external-link-alt"></i>
+                            طقم روما الثاني 2026 (أعمار صغيرة)
+                        </h3>
+                        <p class="project-description">
+                            يعتبر نادي روما الإيطالي من الأندية العريقة التي تهتم دائما بجميع تفاصيل أطقمها الرسمية،
+                            سواء للكبار أو الأعمار الصغيرة. وجاء طقم روما الثاني 2026 (أعمار صغيرة) ليمنح الأطفال </p>
+                        <div class="project-links">
+                            <a href="https://www.google.com/url?q=https://docs.google.com/document/d/1g_7W7Ku3DdZfUSAbn1UWUOIFNDDW8U5VeLp-SxmkQTo/edit?usp%3Dsharing&sa=D&source=editors&ust=1764005438478490&usg=AOvVaw3egYn2L7d1Hsq8493_aDLG"
+                                class="project-link" target="_blank" rel="noopener">
+                                <i class="fas fa-eye"></i> عرض المشروع
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">
+                            <i class="fas fa-external-link-alt"></i>
+                            دليل شامل لاختيار أفضل منصات متاجر إلكترونية لنجاح أعمالك
+                        </h3>
+                        <p class="project-description">
+                            يوفر موقع ويز لجميع عملائه إمكانية التعامل مع منصات متاجر إلكترونية ذات السمعة العالمية في
+                            مجال انشاء متجر الكتروني على أعلى مستوى من الاحترافية، </p>
+                        <div class="project-links">
+                            <a href="https://www.google.com/url?q=https://docs.google.com/document/d/108v5ksoodhsI2Qa50buqYDGuxnE3OtwLWR4CPzhKDeU/edit?usp%3Ddrivesdk&sa=D&source=editors&ust=1764005438478570&usg=AOvVaw3ryhimqHZKEq6ztbPcdOBl"
+                                class="project-link" target="_blank" rel="noopener">
+                                <i class="fas fa-eye"></i> عرض المشروع
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">
+                            <i class="fas fa-external-link-alt"></i>
+                            العلاج الطبيعي لضمور العضلات
+                        </h3>
+                        <p class="project-description">
+                            يهتم مركز المختصون بتوفير برنامج العلاج الطبيعي لضمور العضلات شامل ومتكامل يضمن الحصول على
+                            أفضل النتائج المرغوب فيها، ونؤكد على وجود حالات شفيت من ضمور العضلات نتيجة اتباع هذا
+                            البرنامج التأهيلي وذلك حسب شدة ونوع الإصابة.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://www.google.com/url?q=https://docs.google.com/document/d/1Ig_NkkA5szjlV59RliOEC1lc7A9OHl_5z6nWTn5K5m0/edit?usp%3Ddrivesdk&sa=D&source=editors&ust=1764005438478648&usg=AOvVaw25ch1n6D_ZurjYMhDkCJBY"
+                                class="project-link" target="_blank" rel="noopener">
+                                <i class="fas fa-eye"></i> عرض المشروع
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">
+                            <i class="fas fa-external-link-alt"></i>
+                            تصدق بريال
+                        </h3>
+                        <p class="project-description">
+                            الصدقة هي شمعة تضيء حياة الأسر الاشد احتياجا فكل ريال منك لديه القدرة على تغيير حياة أسرة
+                            كاملة، في مشروع تصدق بريال المقدم من مبرة دار الخير هو دعوة لك من أجل أن تنضم الينا في قوافل
+                            الخير؛ </p>
+                        <div class="project-links">
+                            <a href="https://www.google.com/url?q=https://docs.google.com/document/d/1p7VNpme6ntXJH552Bm0cFyt_e8p89ETW_gdmmtDwVqU/edit?usp%3Ddrivesdk&sa=D&source=editors&ust=1764005438478783&usg=AOvVaw0cda78giwDdf6jpjGOsvbw"
+                                class="project-link" target="_blank" rel="noopener">
+                                <i class="fas fa-eye"></i> عرض المشروع
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">
+                            <i class="fas fa-external-link-alt"></i>
+                            اخراج الزكاة
+                        </h3>
+                        <p class="project-description">
+
+                            نداء إلى قلبك الرحيم زكاة المال هي حياه لغيرك تخيل معي أن هناك على بعد خطوات بسيطة منك قلوب
+                            تعبت، وأرواح يكاد اليأس ياكل جوفها اخراج الزكاة يجعل اليتيم ينام وهو مطمئن ولا يفتقد الحنان
+                            زكاة مالك
+                        </p>
+                        <div class="project-links">
+                            <a href="https://www.google.com/url?q=https://docs.google.com/document/d/1K7ybV_zV4arbn-aiC0l5StE8ZIY-CkFXchabd0j6W4g/edit?usp%3Ddrivesdk&sa=D&source=editors&ust=1764005438478935&usg=AOvVaw1WrkGwxFTipW73UzHLFNlY"
+                                class="project-link" target="_blank" rel="noopener">
+                                <i class="fas fa-eye"></i> عرض المشروع
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>تواصل معي</h2>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>الهاتف</h4>
+                            <p>0533295006</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>البريد الإلكتروني</h4>
+                            <p>Ali--99--1@hotmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightbox-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <button class="lightbox-nav lightbox-prev" id="lightbox-prev">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <button class="lightbox-nav lightbox-next" id="lightbox-next">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <img src="" alt="عرض الصورة" id="lightbox-img">
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>على بن عايد بن علي حسيني الشمري</h3>
+                    <p>كاتب محتوى يساعد العلامات التجارية على ترك انطباع دائم بالكلمة المكتوبة.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>تواصل</h3>
+                    <div class="social-links">
+                        <a href="mailto:Ali--99--1@hotmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+                        <a href="tel:0533295006" class="social-link"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 على بن عايد بن علي حسيني الشمري. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Add smooth scrolling to navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add animation to elements when they come into view
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        });
+
+        document.querySelectorAll('.section').forEach((section) => {
+            observer.observe(section);
+        });
+
+        // Update skill bars width on scroll
+        const skillBars = document.querySelectorAll('.skill-progress');
+        const skillObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.width = entry.target.parentElement.previousElementSibling.lastElementChild.textContent;
+                }
+            });
+        });
+
+        skillBars.forEach(bar => {
+            skillObserver.observe(bar);
+        });
+
+        // Gallery Filter Functionality
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                button.classList.add('active');
+
+                const filterValue = button.getAttribute('data-filter');
+
+                galleryItems.forEach(item => {
+                    if (filterValue === 'all') {
+                        item.classList.remove('hide');
+                    } else {
+                        if (item.getAttribute('data-category') === filterValue) {
+                            item.classList.remove('hide');
+                        } else {
+                            item.classList.add('hide');
+                        }
+                    }
+                });
+            });
+        });
+
+        // Lightbox Functionality
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxClose = document.getElementById('lightbox-close');
+        const lightboxPrev = document.getElementById('lightbox-prev');
+        const lightboxNext = document.getElementById('lightbox-next');
+
+        let currentImageIndex = 0;
+        let visibleImages = [];
+
+        // Update visible images based on current filter
+        function updateVisibleImages() {
+            visibleImages = Array.from(galleryItems).filter(item => !item.classList.contains('hide'));
+        }
+
+        // Open lightbox
+        galleryItems.forEach((item, index) => {
+            item.addEventListener('click', (e) => {
+                // Skip link items (external links)
+                if (item.classList.contains('link-item')) {
+                    return;
+                }
+
+                e.preventDefault();
+                updateVisibleImages();
+                currentImageIndex = visibleImages.indexOf(item);
+                const imgSrc = item.querySelector('img').src;
+                lightboxImg.src = imgSrc;
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            });
+        });
+
+        // Close lightbox
+        function closeLightbox() {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = ''; // Restore scrolling
+        }
+
+        lightboxClose.addEventListener('click', closeLightbox);
+
+        // Close on background click
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                closeLightbox();
+            }
+        });
+
+        // Navigate to previous image
+        lightboxPrev.addEventListener('click', (e) => {
+            e.stopPropagation();
+            currentImageIndex = (currentImageIndex - 1 + visibleImages.length) % visibleImages.length;
+            const imgSrc = visibleImages[currentImageIndex].querySelector('img').src;
+            lightboxImg.src = imgSrc;
+        });
+
+        // Navigate to next image
+        lightboxNext.addEventListener('click', (e) => {
+            e.stopPropagation();
+            currentImageIndex = (currentImageIndex + 1) % visibleImages.length;
+            const imgSrc = visibleImages[currentImageIndex].querySelector('img').src;
+            lightboxImg.src = imgSrc;
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (!lightbox.classList.contains('active')) return;
+
+            if (e.key === 'Escape') {
+                closeLightbox();
+            } else if (e.key === 'ArrowLeft') {
+                lightboxNext.click();
+            } else if (e.key === 'ArrowRight') {
+                lightboxPrev.click();
+            }
+        });
+    </script>
+</body>
+
+</html>
